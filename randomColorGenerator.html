@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .color{
+            height: 40vh;
+            width: 80vw;
+            border: 1px solid;
+        }
+        button{
+            margin-top: 12px;
+            border-radius: 4px;
+            line-height: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            color: white;
+            padding: 0px 12px;
+            background-color: green;
+        }
+        button:active{
+            background-color: rgba(4, 255, 0, 0.953);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Color Generator</h1>
+        <div class="color"></div>
+        <button>Click here!</button>
+    </div>
+    <script>
+        let button = document.querySelector("button");
+        let heading = document.querySelector("h1");
+        let rndColor;
+        let green;
+        let red;
+        let blue;
+        button.addEventListener("click",()=>{
+            red = Math.floor(Math.random()*256);
+            green = Math.floor(Math.random()*256);
+            blue = Math.floor(Math.random()*256);
+            rndColor = `rgb(${red},${green},${blue})`;
+            heading.innerText =  `Color Generated : ${rndColor}`;
+            document.querySelector(".color").style.backgroundColor = `${rndColor}`;
+            document.querySelector(".color").style.borderColor = `${rndColor}`;
+        })
+    </script>
+</body>
+</html>
