@@ -1,29 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Development All Projects</title>
     <style>
-        *{
-            text-decoration: none;
-            font-size: 24px;
-            color: black;
-            user-select:none;
+      * {
+        user-select: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .container {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .container div {
+        height: 400px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .container div img {
+        width: 95%;
+        height: 55%;
+        object-fit: fill;
+      }
+      .container h1 {
+        cursor: pointer;
+        position: sticky;
+        top: 0px;
+        font-size: 22px;
+        font-weight: 900;
+        margin-left: 8px;
+        background-color: white;
+        width: 100%;
+      }
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+      .discription p {
+        margin-left: 9px;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: justify;
+      }
+      .discription {
+        max-height: 50%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+      @media (max-width: 520px) {
+        .container div {
+          width: 100%;
         }
-        a{
-            display: block;
-            margin-top: 12px;
+        a {
+          font-size: 32px;
         }
+      }
     </style>
-</head>
-<body>
-    <ol>
-        <ul><a href="https://21depk.github.io/amazonclone.github.io/">Amazon Clone</a></ul>
-        <ul> <a href="https://21depk.github.io/calculator.github.io/">Calculator</a></ul>
-        <ul><a href="https://21depk.github.io/TODO.github.io./">TODO List</a></ul>
-        <ul><a href="./randomColorGenerator.html">Random Color Generator</a></ul>
-        <ul><a href="https://21depk.github.io/rock_paper_scissor.github.io/">Rock Paper Scissor</a></ul>
-    </ol>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img
+          src="https://d3pc1xvrcw35tl.cloudfront.net/images/686x514/amazon-logo_201807108270.jpg"
+          alt="Amazon image"
+        />
+        <div class="discription">
+          <h1>
+            <a href="https://21depk.github.io/amazonclone.github.io/"
+              >Amazon Clone</a
+            >
+          </h1>
+          <p>
+            I've successfully built a simplified Amazon clone using HTML and
+            CSS, marking my initial steps into web development. This project
+            represents my introduction to front-end technologies and showcases a
+            basic understanding of HTML and CSS principles.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://i.ytimg.com/vi/cGgLHJGyS34/maxresdefault.jpg"
+          alt="Calculator image"
+        />
+        <div class="discription">
+          <h1>
+            <a href="https://21depk.github.io/calculator.github.io/"
+              >Calculator</a
+            >
+          </h1>
+          <p>
+            I'm thrilled to share my interactive calculator project, where I've
+            combined HTML, CSS, and JavaScript to create a dynamic and
+            user-friendly tool for basic arithmetic calculations. This project
+            marks a significant milestone in my journey into web development.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://www.codingnepalweb.com/wp-content/uploads/2022/02/Create-A-Todo-List-App-in-HTML-CSS-JavaScript.jpg"
+          alt="Todo list image"
+        />
+        <div class="discription">
+          <h1>
+            <a href="https://21depk.github.io/TODO.github.io./">TODO List</a>
+          </h1>
+          <p>
+            I'm excited to present my interactive ToDo list project, a
+            culmination of my efforts in web development using HTML, CSS, and
+            JavaScript. This project showcases my ability to create a dynamic
+            and user-friendly application for task management.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://i0.wp.com/codingtorque.com/wp-content/uploads/2022/12/1-14.png?fit=1280%2C720&ssl=1"
+          alt="Random Color Generator image"
+        />
+        <div class="discription">
+          <h1>
+            <a href="./randomColorGenerator.html">Random Color Generator</a>
+          </h1>
+          <p>
+            I'm excited to share my Random Color Generator project crafted with
+            HTML, CSS. This project reflects my exploration of creative and
+            interactive elements in web development.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://i.ytimg.com/vi/eygshyXEWBk/maxresdefault.jpg"
+          alt="Rock Paper Scissor game project image"
+        />
+        <div class="discription">
+          <h1>
+            <a href="https://21depk.github.io/rock_paper_scissor.github.io/"
+              >Rock Paper Scissor</a
+            >
+          </h1>
+          <p>
+            I'm thrilled to present my interactive Rock, Paper, Scissors game
+            project, a fun and engaging application developed using HTML, CSS,
+            and JavaScript. This project highlights my enthusiasm for creating
+            interactive and entertaining web applications.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s---6mZi3Sx--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/d7qms6nd37gxfe303v8t.png"
+          alt="Tik tak toe game image"
+        />
+        <div class="discription">
+          <h1>
+            <a href="https://21depk.github.io/tik-tak-toe.github.io/"
+              >Tik Tak Toe</a
+            >
+          </h1>
+          <p>
+            I'm excited to showcase my Rock, Paper, Scissors game project, a
+            classic and engaging application developed with HTML, CSS, and
+            JavaScript. This project reflects my passion for creating
+            interactive and enjoyable web experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+
+<!-- template for new project  -->
+<!-- <div>
+    <img src="" alt="" />
+    <div class="discription">
+      <h1>
+        <a href=""></a>
+      </h1>
+      <p></p>
+    </div>
+  </div> -->
